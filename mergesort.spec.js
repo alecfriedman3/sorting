@@ -13,6 +13,12 @@ describe('Split', function(){
     });
 });
 
+describe('Merge', function(){
+
+    it('Merges two arrays in order', function(){
+    expect( merge([1,3,6], [2, 3, 4, 7]) ).toEqual( [1, 2, 3, 3, 4, 6, 7] );
+    });
+});
 
 
 describe('Merge Sort', function(){
@@ -21,7 +27,7 @@ describe('Merge Sort', function(){
     expect( mergeSort([]) ).toEqual( [] );
     });
 
-    it('handles an empty array', function(){
+    it('merges an array', function(){
     expect( mergeSort([6,8,10,2,5,4]) ).toEqual( [2,4,5,6,8,10] );
     });
 });
